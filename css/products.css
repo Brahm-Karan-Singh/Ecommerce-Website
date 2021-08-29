@@ -140,6 +140,7 @@
   }
   /* --- Navigation Bar ---  */
   .container{
+      font-family: 'Quicksand' , sans-serif;
     max-width: 1500px;
     width: 100%;
     padding: 0 5rem;
