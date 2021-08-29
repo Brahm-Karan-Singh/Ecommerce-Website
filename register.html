@@ -1,0 +1,299 @@
+<!-- <?php
+$sname="localhost";
+$username="root";
+$password="";
+$database="project";
+//create connection
+$conn = mysqli_connect($sname,$username,$password,$database);
+//check connection
+if (!$conn){
+    die("connection failed: ". mysqli_connect_error());
+}
+// else {echo "connected successfully";}
+?> -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chhabra Associates | Paint Shop </title>
+    <link rel="stylesheet" href="./css/register.css?v=</php echo time(); ?>">
+    <link rel="stylesheet" href="./css/hamburger-menu.css">
+    <link rel="stylesheet" href="css/tablets.css" media="screen and (min-width: 768px) and (max-width:1023px)">
+    <link rel="stylesheet" href="css/mobiles.css" media="screen and (max-width: 767px)">
+    <link rel="stylesheet" href="css/desktop.css" media="screen and (min-width: 1024px) and (max-width:1366px)">
+
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/79c72f359e.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!-- --- Navigation Bar ---  -->
+    <div class="stain-1 stain"><img src="./images/blue-stain.svg" alt="" width="70px" height="70px"></div>
+    <div class="stain-2 stain"><img src="./images/green-stain.svg" alt="" width="70px" height="70px"></div>
+    <div class="stain-3 stain"><img src="./images/orange-stain.svg" alt="" width="70px" height="70px"></div>
+    <div class="stain-4 stain"><img src="./images/cyan-stain.svg" alt="" width="70px" height="70px"></div>
+    <div class="stain-5 stain"><img src="./images/green-stain.svg" alt="" width="70px" height="70px"></div>
+    <div class="stain-6 stain"><img src="./images/orange-stain.svg" alt="" width="70px" height="70px"></div>
+    <div class="container">
+        <div class="logo"><span>Chhabra</span> Associates</div>
+        <div class="navbar">
+            <ul>
+                <div class="menu-items">
+                <li><a href="index.html" class="home">Home</a></li>
+                <li><a href="portfolio.html" class="about_us">About Us</a></li>
+                <li><a href="products.html" class="products">Products</a></li>
+                <li><a href="register.html" class="sign">Register</a></li>
+                </div>
+                <li >
+                    <a href="#" class="cart cart-wrapper"><i class="fas fa-shopping-cart cart"></i></a>
+                    <div class="cart-desc">
+                        <h2>Your Cart Is Empty !!</h2>
+                        <a href="./cart.html" id="see-cart">See Your Cart </a>
+                        <a href="./products.html" id="shopping">Start Shopping</a>
+                    </div>
+                </li>
+
+                <!-- hamburgerMenu  -->
+                <li class="hamburger"> 
+                    <input type="checkbox" class="toggler">
+                    <div class="hamburger-wrap"> 
+                        <div></div>
+                    </div>
+                    <div class="menu">
+                        <div>
+                            <div>
+                                <ul>
+                                    <li><a href="index.html" class="home-ham">Home</a></li>
+                                    <li><a href="portfolio.html" class="about-us-ham" >About Us</a></li>
+                                    <li><a href="products.html" class="products-ham" >Products</a></li>
+                                    <li><a href="register.html" class="sign-ham">Register</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+        <a href="#head" class="scroll-up"> <i class="fas fa-arrow-up"></i></a>
+
+    <!-- ----- Sign-Up Form ----  -->
+    <section id=sign-up>
+        <div class="forbg">
+            <div class="sup">
+                <div class="img"><img src="./images/sign-up.jpg" alt="Sign Up" width="370px" height="425px"></div>
+                <div class="form">
+                    <div class="head_of_form">
+                        <span id="registerbtn" onclick="register()">Register</span>
+                        <span id="loginbtn" onclick="login()">Login</span>
+
+                    </div>
+
+                    <div class="formup">
+                        <form action="register.php" method="POST" class="Register" id="register">
+                            <table cellspacing="10px">
+                                <tr>
+                                    <th> First Name:</td>
+                                        <td><input type="text" name="firstname" placeholder="Enter Firstname" required></td>
+                                </tr>
+                                <tr>
+                                    <th> Last Name:</td>
+                                        <td><input type="text" name="lastname" placeholder="Enter Lastname"></td>
+                                </tr>
+                                <tr>
+                                    <th>Age:</td>
+                                        <td><input type="text" name="age" required></td>
+                                </tr>
+                                <tr>
+                                    <th>DOB:</td>
+                                        <td><input type="date" name="dob" required></td>
+                                </tr>
+                                <tr>
+                                    <th>Email:</td>
+                                        <td><input type="email" name="email" required></td>
+                                </tr>
+                                <tr>
+                                    <th>Password:</td>
+                                        <td><input type="password" name="passcode" placeholder="Set Password" required></td>
+                                </tr>
+                                <tr>
+                                    <th>Confirm Password:</td>
+                                        <td><input type="password" name="confirm" placeholder="Re-enter Password" required></td>
+                                </tr>
+                            </table>
+                            <input type="submit" name="submit" value="Register" class="submit">
+                        </form>
+                        <form action="register.php" method="POST" id="login" class="Login">
+                            <table cellspacing="10px">
+                                <tr>
+                                    <th>Email:</td>
+                                        <td><input type="email" name="uname" required></td>
+                                </tr>
+                                <tr>
+                                    <th>Password:</td>
+                                        <td><input type="password" name="pass" required></td>
+                                </tr>
+
+                            </table>
+                            <input type="submit" name="login" value="Login" class="submit">
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="message">
+                <h2 id="reg_success">*You are Registered Successfully</h2>
+                <h2 id="reg_fail">*Incorrect email or password</h2>
+                <h2 id="log_fail">*Please enter correct email or password</h2>
+            </div>
+        </div>
+
+    </section>
+
+    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d215.19669057798356!2d76.4331689!3d30.3467705!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x391028152d8f5dc9%3A0x4e95337e56be5a9a!2sGuru%20Nanak%20Market%20(Tikoni%20Market)!5e0!3m2!1sen!2sin!4v1629567776320!5m2!1sen!2sin" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+
+    <!-- ----Footer----  -->
+    <footer id="foot">
+        <h1><span>Want To </span>Connect With Us</h1>
+        <div class="foot-cover">
+            <div class="address">
+                <h2> <span>Our</span> Address</h2>
+                <h4 class="address-desc">Shop No.10, Trikoni Market ,Opp Urban Estate Ph-2, Sirhind Byepass Road, Patiala, Punjab</h4>
+                <h2 class="left"><span>Timings</span></h2>
+                <h4>
+                    <ul>
+                        <li>Mon-Fri : 8:00am to 8:00pm</li>
+                        <li>Saturday : 8:00am to 5:00pm</li>
+                        <li>Sunday : Closed</li>
+                    </ul>
+                </h4>
+            </div>
+            
+            <div class="feedback"><form action="mailto:bkoraclee@gmail.com" method="POST">
+                <table>
+                    <tr>
+                        <td><label for="name">Name: </label></td>
+                        <td><input type="text" id="name" required></td>
+                    </tr>
+                    <tr>
+                        <td><label for="name">Email : </label></td>
+                        <td><input type="email" id="email" required></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <textarea name="feedback-text" id="feedback" cols="31" rows="7" placeholder="Enter your feedback here "></textarea>
+                        </td>
+                    </tr>
+                </table>
+                <input type="submit" name="submit" value="Send" class="sub">
+                
+            </form></div> 
+            <div class="connect">
+                <h2 class="find-us"><span>Find</span> Us</h2>
+                <div class="social"><img src="./images/gmail.png" alt="" width="30px" height="30px"><p>chhabrapaints@gmail.com</p></div>
+                <div class="social"><img src="./images/facebook.png" alt="" width="30px" height="30px"><p>_chhabra_paints</p></div>
+                <div class="social"><img src="./images/twitter.png" alt="" width="30px" height="30px"><p>paints_chhabra</p></div>
+                <div class="social"><img src="./images/instagram.png" alt="" width="30px" height="30px"><p>chhabra_paints</p></div>
+            </div>
+ 
+        </div>
+        <h4 class="copy">&copy; Copyright Chhabra Associates 2021</h4>
+    </footer>
+</body>
+<script>
+    var Login = document.getElementById("login");
+    var Register = document.getElementById("register");
+    var LoginBtn = document.getElementById("loginbtn");
+    var RegisterBtn = document.getElementById("registerbtn");
+
+    function login() {
+        Login.style.transform = "translateX(0px)";
+        LoginBtn.style.backgroundColor = "coral";
+        Register.style.transform = "translateX(380px)";
+        RegisterBtn.style.backgroundColor = "transparent";
+    }
+
+    function register() {
+        Login.style.transform = "translateX(-380px)";
+        Register.style.transform = "translateX(0px)";
+        RegisterBtn.style.backgroundColor = "coral";
+        LoginBtn.style.backgroundColor = "transparent";
+    }
+
+
+    function myFunction(x) {
+  if (x.matches) { // If media query matches
+    document.querySelector('.logo').innerHTML = `<span>C</span>A`;
+    document.querySelector('.logo').style.fontFamily = 'Quicksand, sans-serif';
+  }else{
+    document.querySelector('.logo').innerHTML = `<span>Chhabra</span>Associates`;
+  }
+}
+
+var x = window.matchMedia("(max-width: 500px)")
+myFunction(x) // Call listener function at run time
+x.addListener(myFunction) // Attach listener function on state changes
+
+// Showing Cart Description 
+var cartOpen = false;
+document.querySelector('.cart').addEventListener('click',()=>{
+    if(cartOpen){
+        document.querySelector('.cart-desc').style.display = "none";
+        cartOpen = false
+    }else{
+        cartOpen = true;
+        document.querySelector('.cart-desc').style.display = "flex";
+    }
+})
+</script>
+
+</html>
+<!-- <?php
+if(isset($_POST['submit'])){
+    $first_name=$_POST['firstname'];
+    $last_name=$_POST['lastname'];
+    $age=$_POST['age'];
+    $dob=$_POST['dob'];
+    $Email=$_POST['email'];
+    $pass=$_POST['passcode'];
+    $con_pass=$_POST['confirm'];
+    if($con_pass == $pass){
+        $sql= "INSERT INTO credentials(First_Name,Last_Name,Age,DOB,Email,Passcode)VALUES ('$first_name','$last_name','$age','$dob','$Email','$pass')";
+        if (mysqli_query($conn,$sql)) {
+            echo "<script>
+             document.getElementById('reg_success').style.opacity = '1';
+            </script>";
+        }
+        else{
+            echo "ERROR: ". $sql .mysqli_error($conn);
+        }
+    }
+    else{
+        mysqli_close($conn);
+        echo "<script>
+        document.getElementById('reg_fail').style.opacity = '1';
+       </script>";
+    }
+   
+    
+}
+?>
+<?php
+if(isset($_POST['login'])){
+    $name=$_POST['uname'];
+    $password=$_POST['pass'];
+    $query= mysqli_query($conn,"SELECT * FROM credentials where Email='$name' and Passcode='$password'");
+    if(mysqli_num_rows($query)>0){
+        // echo "<script>alert('Do you want to login')</script>";
+       echo "<script>window.open('products.html','_self')</script>";  //self will allow to proceed in same window instead of new window
+    }
+    else{
+        echo "<script>
+        document.getElementById('log_fail').style.opacity = '1';
+       </script>";
+    }
+    mysqli_close($conn);
+}
+?> -->

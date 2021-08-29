@@ -1,0 +1,136 @@
+.hamburger{
+    height: 54px;
+    justify-self: end;
+    display: none;
+}
+.toggler{
+    position:relative;
+    top:0;
+    width:45px;
+    height:54px;
+    z-index:5;
+    opacity: 0;
+   cursor: pointer;
+}
+.menu-items{
+    display: flex;
+}
+.hamburger-wrap{
+    position: absolute;
+    top:0;
+    width:45px;
+    height:54px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 10px;
+
+}
+.hamburger-wrap > div{
+    position: relative;
+    width:100%;
+    height: 3px;
+    background-color: whitesmoke;
+    z-index:4;
+    transition:all 0.4s ease;
+}
+.hamburger-wrap> div::before,
+.hamburger-wrap> div::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    background: whitesmoke;
+    top:-8px;
+    left:0;
+}
+.hamburger-wrap> div::after{
+    top: 8px;
+}
+.toggler:checked + .hamburger-wrap > div{
+    transform: rotate(135deg);
+} 
+.toggler:checked + .hamburger-wrap > div::before,
+.toggler:checked + .hamburger-wrap > div::after{
+    top:0;
+    transform: rotate(90deg);
+} 
+.hamburger .menu{
+    position: fixed;
+    top:0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    visibility: hidden;
+    width: 100%;
+    height: 100%;
+}
+
+/* It is used to give overlay and scale up when clicked  */
+.hamburger .menu > div{
+    background-color: rgba(0, 0, 0, 0.938);
+    width: 300vw;
+    height: 300vw;
+    border-radius: 50%;
+    flex: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    transform: scale(0);
+    transition: all 0.75s ease;
+}
+
+/* It contains the list items  */
+.hamburger .menu > div >div{
+    max-width: 90vw;
+    max-height: 100vh;
+    margin: 0 auto;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    flex-direction:column ;
+    justify-content: center;
+    transition: all 0.4s ease;
+    opacity: 0;
+}
+
+/* settings for list item  */
+.hamburger .menu > div >div >ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    list-style: none;
+    color: white;
+}
+.hamburger .menu > div > div > ul > li{
+    padding: 0.9rem;
+}
+.hamburger .menu > div > div > ul > li > a{
+    font-size: 1.7rem;
+    color: inherit;
+    text-decoration: none;
+   
+}
+.hamburger .menu > div > div > ul > li > a:hover{
+    color:coral;
+}
+
+/* when toggler is checked then the menu class will be visible and the menu class is targeted by tilde sign  */
+.hamburger .toggler:checked ~ .menu{
+    visibility: visible;
+}
+
+/* when toggler is checked then the div  will scale up  */
+.hamburger .toggler:checked ~ .menu > div{
+    transform: scale(1);
+    transition: transform 0.75s ease;
+}
+
+/* when toggler is checked we will set opacity to one  */
+.hamburger .toggler:checked ~ .menu > div > div{
+    opacity: 1;
+    transition: opacity 0.4s ease 0.4s;
+}

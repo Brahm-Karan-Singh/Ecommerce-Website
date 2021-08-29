@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chhabra Associates | Paint Shop </title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/hamburger-menu.css">
+    <link rel="stylesheet" href="css/mobiles.css" media="screen and (max-width: 767px)">
+    <link rel="stylesheet" href="css/tablets.css" media="screen and (min-width: 768px) and (max-width:1023px)">
+    <link rel="stylesheet" href="css/desktop.css" media="screen and (min-width: 1024px) and (max-width:1366px)">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/79c72f359e.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css" integrity="undefined" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js" integrity="sha512-ZKNVEa7gi0Dz4Rq9jXcySgcPiK+5f01CqW+ZoKLLKr9VMXuCsw3RjWiv8ZpIOa0hxO79np7Ec8DDWALM0bDOaQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.js" integrity="sha512-+/4Q+xH9jXbMNJzNt2eMrYv/Zs2rzr4Bu2thfvzlshZBvH1g+VGP55W8b6xfku0c0KknE7qlbBPhDPrHFbgK4g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+
+</head>
+
+<body>
+    <!-- --- Navigation Bar ---  -->
+    <div class="container">
+        <div class="logo"><span>Chhabra</span> Associates</div>
+        <div class="navbar">
+            <ul>
+                <div class="menu-items">
+                <li><a href="index.html" class="home">Home</a></li>
+                <li><a href="portfolio.html" class="about_us">About Us</a></li>
+                <li><a href="products.html" class="products">Products</a></li>
+                <li><a href="register.html" class="sign">Register</a></li>
+                </div>
+                <li >
+                    <a href="#" class="cart cart-wrapper"><i class="fas fa-shopping-cart cart"></i></a>
+                    <div class="cart-desc">
+                        <h2>Your Cart Is Empty !!</h2>
+                        <a href="./cart.html" id="see-cart">See Your Cart </a>
+                        <a href="./products.html" id="shopping">Start Shopping</a>
+                    </div>
+                </li>
+
+                <!-- hamburgerMenu  -->
+                <li class="hamburger"> 
+                    <input type="checkbox" class="toggler">
+                    <div class="hamburger-wrap"> 
+                        <div></div>
+                    </div>
+                    <div class="menu">
+                        <div>
+                            <div>
+                                <ul>
+                                    <li><a href="index.html" class="home-ham">Home</a></li>
+                                    <li><a href="portfolio.html" class="about-us-ham" >About Us</a></li>
+                                    <li><a href="products.html" class="products-ham" >Products</a></li>
+                                    <li><a href="register.html" class="sign-ham">Register</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+            <a href="#intro" class="scroll-up"> <i class="fas fa-arrow-up"></i></a>
+        <!-- ---section of intro ----->
+        <div class="bg">
+        <section id="intro" >
+            <div class="intro-text">
+                <h1  data-aos="fade-up" data-aos-duration="1200" data-aos-once="true" >New Color – New Adventures – New Memories </h1>
+                <p class="desk-para" data-aos="fade" data-aos-duration="1200" data-aos-delay="100" data-aos-once="true" >Welcome to chhabra associates. We here provide you top notch quality products which makes your place beautiful and safe. Our products are available for everyone because we try our best to make our customers life colorful .</p>
+                <p class="mob-para" data-aos="fade" data-aos-duration="1200" data-aos-delay="100" data-aos-once="true" >We paint your dreams and imagination on your beautiful walls. </p>
+                <div class="buttton"  data-aos="zoom-in-down" data-aos-duration="1000" data-aos-delay="400" data-aos-once="true" data-aos-offset="200" data-aos-easing="ease-in-out"><button class="btn" onclick="explore()">Explore More &#8594;</button></div>
+            </div>
+        </section>  
+    </div>
+
+    <!-- ---Who we are---  -->
+    <div class="head-who" ><h1><span>Our </span> Services </h1></div>
+    <div class="who-wrapper">
+        <section class="who whopart1" >
+            <div class="service sparkle u-hover--sparkle" id="ser-1" >
+                <div class="colored-icon"><img src="icons/interior-paints.png.png" ></div>
+                <div class="service-name">Interior Painting</div>
+                <div class="service-desc">Complete unique feel for your room with innovative designs and a broad spectrum of colors. </div>
+            </div>
+            <div class="service sparkle u-hover--sparkle" id="ser-2">
+             <div class="colored-icon"><img src="images/exterior-paint.png" ></div>
+             <div class="service-name">Exterior Painting</div>
+             <div class="service-desc">New life to your property’s exterior with exterior coats that retain vibrancy for years to come.</div>
+         </div>
+     
+         <div class="service sparkle u-hover--sparkle" id="ser-3">
+             <div class="colored-icon"><img src="icons/wallpaper-removing.png" ></div>
+             <div class="service-name">Wallpaper Removal </div>
+             <div class="service-desc">Efficient, messy-free wallpaper removal that saves you considerable time and frustration. </div>
+         </div>
+     
+         <div class="service sparkle u-hover--sparkle servicepart2" id="ser-4">
+             <div class="colored-icon"><img src="icons/wood-siding.png" ></div>
+             <div class="service-name">Reconditioning Wood Sidings</div>
+             <div class="service-desc">Restoration easy with simple step by step process that gives fresh vibrant shine.</div>
+         </div>
+     
+         <div class="service sparkle u-hover--sparkle servicepart2" id="ser-5">
+             <div class="colored-icon"><img src="icons/power-washing.png" ></div>
+             <div class="service-name">Power Washing</div>
+             <div class="service-desc">Power washing with proper equipment including pressure washers and ladders.</div>
+         </div>
+     
+         <div class="service sparkle u-hover--sparkle servicepart2" id="ser-6">
+             <div class="colored-icon"><img src="icons/wood-staining.png" ></div>
+             <div class="service-name">Staining</div>
+             <div class="service-desc">Professional wood stain job which will add both life and vitality to your deck . </div>
+         </div>
+     
+         <div class="service sparkle u-hover--sparkle" id="ser-7" >
+             <div class="colored-icon"><img src="icons/commercial-painting.png" ></div>
+             <div class="service-name">Commercial Painting</div>
+             <div class="service-desc"> Wide array of tones, colors, and designs that gives the embraced effect and that wow factor! </div>
+         </div>
+     
+         <div class="service sparkle u-hover--sparkle" id="ser-8">
+             <div class="colored-icon"><img src="icons/consultation.png" ></div>
+             <div class="service-name">Consultation</div>
+             <div class="service-desc">Consulting that is designed to help you create a vision that works with your personal taste.</div>
+         </div>
+        </section>
+       
+    </div>
+      <!-- ---products--  -->
+    <section id="products">
+        <h1 class="py-2"><span>Featured </span>Products</h1>
+        <div class="product">
+            <div class="product-1 products--part1 product1" >
+                <img src="./images/royale-play.png" class="product-image">
+                <div class="product-desc">
+                    <h3>Royale Play</h3>
+                <div class="rating">
+                    <i class="fa fa-star" ></i>
+                    <i class="fa fa-star" ></i>
+                    <i class="fa fa-star" ></i>
+                    <i class="fa fa-star" ></i>
+                    <i class="fa fa-star" ></i>
+                </div>
+                <h4>Rs 8500/-</h4>
+                </div> 
+            </div>
+            <div class="product-1 products--part1 product2" >
+                <img src="./images/tractor.png" alt="" class="product-image">
+                <div class="product-desc">
+                    <h3>Tractor Emulsion</h3>
+                <div class="rating">
+                    <i class="fa fa-star" ></i>
+                    <i class="fa fa-star" ></i>
+                    <i class="fa fa-star" ></i>
+                    <i class="fa fa-star" ></i>
+                    <i class="fa fa-star-o" aria-hidden="true"></i>
+                </div>
+                <h4>Rs 1800/-</h4>
+                </div> 
+            </div>
+            <div class="product-1 products--part1 product3">
+                <img src="./images/royale-weather.png" alt="" class="product-image">
+                <div class="product-desc">
+                    <h3>Royale Weather</h3>
+                <div class="rating">
+                    <i class="fa fa-star" ></i>
+                    <i class="fa fa-star" ></i>
+                    <i class="fa fa-star" ></i>
+                    <i class="fa fa-star-half" aria-hidden="true"></i>
+                    <i class="fa fa-star-o" aria-hidden="true"></i>
+                </div>
+                <h4>Rs 7000/-</h4>
+                </div>    
+            </div>
+            <div class="product-1 products--part1 product4">
+                <img src="./images/ace-sparc.png" alt="" class="product-image">
+                <div class="product-desc">
+                    <h3>Ace Sparc</h3>
+                <div class="rating">
+                    <i class="fa fa-star" ></i>
+                    <i class="fa fa-star" ></i>
+                    <i class="fa fa-star" ></i>
+                    <i class="fa fa-star-half" aria-hidden="true"></i>
+                    <i class="fa fa-star-o" aria-hidden="true"></i>
+                </div>
+                <h4>Rs 1500/-</h4>
+                </div> 
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Work  -->
+    <section id="products" class="grid">
+        <h1 class="py-3"><span>Glimpse   </span>Of Our Work  </h1>
+        <div class="grid-gallery">
+            <div id="grid-1" class="grids"></div>
+            <div id="grid-2" class="grids"></div>
+            <div id="grid-3" class="grids"></div>
+            <div id="grid-4" class="grids"></div>
+            <div id="grid-5" class="grids"></div>
+            <div id="grid-6" class="grids"></div>
+            <div id="grid-7" class="grids"></div>
+            <div id="grid-8" class="grids"></div>
+            <div id="grid-9" class="grids"></div>
+            <div id="grid-10" class="grids"></div>
+            <div id="grid-11" class="grids"></div>
+            <div id="grid-12" class="grids"></div>
+            <div id="grid-13" class="grids"></div>
+            <div id="grid-14" class="grids"></div>
+        </div>
+       
+    </section>
+
+
+    <!-- --- Testimonials ---  -->
+    <section id="testimonials">
+        <div class="testi-cover testipart1" id="testimonial-1">
+            <div class="test">
+                <i class="fa fa-quote-left fa-2x quote py-1" aria-hidden="true"></i>
+               <p>We appreciate the services provided by Chhabra Associates consultants. Our painting project was perfectly coordinated and nicely done by the specialists.</p>
+               <h3>- Jeevanjot Singh</h3>
+                <img src="./images/person-1.jpg" >
+            </div>
+        </div>
+        <div class="testi-cover testipart1" id="testimonial-2">
+            <div class="test">
+                <i class="fa fa-quote-left fa-2x quote py-1" aria-hidden="true"></i>
+               <p>The painting project carried out by skilled professionals of Chhabra Associates at my home is excellent. I am highly satisfied with the end result. Keep it up</p>
+               <h3>- Jashan Dhingra</h3>
+               <img src="./images/person-2.jpg" alt="" width="150px" height="150px">
+            </div>
+        </div>
+        <div class="testi-cover testipart1" id="testimonial-3">
+            <div class="test">
+                <i class="fa fa-quote-left fa-2x quote py-1" aria-hidden="true"></i>
+               <p>The Chhabra Associates team working on my assignment was polite, customer friendly and completed the work on time. I rate their services a full 10 on 10!.</p>
+               <h3>- Arshpreet Singh</h3> 
+               <img src="./images/person-3.jpg" alt="" width="150px" height="150px">
+            </div>
+        </div>
+    </section>
+ <!-- Ratings  -->
+    <section class="ratings ratingpart1">
+        <div class="column-1">
+            <div class="rating-1 rating">
+                <div class="colored-icon"><img src="icons/year-in-business.png" ></div>
+                <div class="rate-count">
+                    <div class="count">
+                        <span class="counter">19</span>
+                        <span class="counter-des">+</span>
+                    </div>
+                    
+                    <p>YEARS IN BUSINESS</p>
+                </div>
+            </div>
+            <div class="rating-2 rating">
+                <div class="colored-icon"><img src="icons/variety-of-products.png" ></div>
+                <div class="rate-count">
+                    <div class="count">
+                        <span class="counter">90</span>
+                        <span class="counter-des">+</span>
+                    </div>
+                   
+                    <p>VARIETY OF PRODUCTS</p>
+                </div>
+            </div>
+            <div class="rating-3 rating">
+                <div class="colored-icon"><img src="icons/projects-done.png" ></div>
+                <div class="rate-count">
+                    <div class="count">
+                        <span class="counter">350</span>
+                        <span class="counter-des">+</span>
+                    </div>
+                    
+                    <p>PROJECTS DONE</p>
+                </div>
+            </div>
+            <div class="rating-4 rating">
+                <div class="colored-icon"><img src="icons/customers.png" ></div>
+                <div class="rate-count">
+                    <div class="count">
+                        <span class="counter">88</span>
+                        <span class="counter-des">+</span>
+                    </div>
+                    
+                    <p>HAPPY CUSTOMERS</p>
+                </div>
+            </div>
+            <div class="rating-5 rating">
+                <div class="colored-icon"><img src="icons/hours-worked.png" ></div>
+                <div class="rate-count">
+                   <div class="count">
+                    <span class="counter">94</span>
+                    <span class="counter-desc">K+</span>
+                   </div> 
+                    <p>HOURS WORKED</p>
+                </div>
+            </div>
+        </div>
+        
+    </section>
+    <!-- ---Dealership With ---  -->
+    <section id="dealership-with">
+        <h1><span>Dealership</span> With</h1>
+        <div class="companies">
+            <img src="./images/asian-paints.png" class="dealership--part1 com-1"> 
+            <img src="./images/british-paints.png" class="dealership--part1 com-2" >
+            <img src="./images/nerolac.png" class="dealership--part1 com-3" >
+            <img src="./images/berger.png" class="dealership--part1 com-4" >
+        </div>
+    </section>
+    <!-- ---Footer---  -->
+    <footer id="foot">
+        <h1><span>Want To </span>Connect With Us</h1>
+        <div class="foot-cover">
+            <div class="address">
+                <h2> <span>Our</span> Address</h2>
+                <h4 class="address-desc">Shop No.10, Trikoni Market ,Opp Urban Estate Ph-2, Sirhind Byepass Road, Patiala, Punjab</h4>
+                <h2 class="left"><span>Timings</span></h2>
+                <h4>
+                    <ul>
+                        <li>Mon-Fri : 8:00am to 8:00pm</li>
+                        <li>Saturday : 8:00am to 5:00pm</li>
+                        <li>Sunday : Closed</li>
+                    </ul>
+                </h4>
+            </div>
+            
+            <div class="feedback"><form action="mailto:bkoraclee@gmail.com" method="POST">
+                <table>
+                    <tr>
+                        <td><label for="name">Name: </label></td>
+                        <td><input type="text" id="name" required></td>
+                    </tr>
+                    <tr>
+                        <td><label for="name">Email : </label></td>
+                        <td><input type="email" id="email" required></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <textarea name="feedback-text" id="feedback" cols="31" rows="7" placeholder="Enter your feedback here "></textarea>
+                        </td>
+                    </tr>
+                </table>
+                <input type="submit" name="submit" value="Send" class="sub">
+                
+            </form></div> 
+            <div class="connect">
+                <h2 class="find-us"><span>Find</span> Us</h2>
+                <div class="social"><img src="./images/gmail.png" alt="" width="30px" height="30px"><p>chhabrapaints@gmail.com</p></div>
+                <div class="social"><img src="./images/facebook.png" alt="" width="30px" height="30px"><p>_chhabra_paints</p></div>
+                <div class="social"><img src="./images/twitter.png" alt="" width="30px" height="30px"><p>paints_chhabra</p></div>
+                <div class="social"><img src="./images/instagram.png" alt="" width="30px" height="30px"><p>chhabra_paints</p></div>
+            </div>
+ 
+        </div>
+        <h4 class="copy">&copy; Copyright Chhabra Associates 2021</h4>
+    </footer>
+</body>
+<!-- Animation on slide  -->
+<script src="./js/index.js"></script>
+<script src="./js/waypoints.min.js"></script>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+
+<script>
+
+$('.counter').counterUp({
+    delay: 27,
+    time: 3000
+});
+
+    $(document).ready(function(){
+        $('.products--part1').waypoint(function(){
+            $('.products--part1').addClass('animated fadeInUp');
+        },{
+            offset:'75%'
+        })
+    })
+
+    $(document).ready(function(){
+        $('.testipart1').waypoint(function(){
+            $('.testipart1').addClass('animated flipInY');
+        },{
+            offset:'50%'
+        })
+    })
+
+    $(document).ready(function(){
+        $('.service').waypoint(function(){
+            $('.service').addClass('animated zoomIn');
+        },{
+            offset:'50%'
+        })
+
+        $('.dealership--part1').waypoint(function(){
+            $('.dealership--part1').addClass('animated fadeIn');
+        },{
+            offset:'70%'
+        })
+    })
+
+</script>
+</html>
+<!-- 
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) { ... }
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) and (max-width: 991px) { ... }
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) and (max-width: 1235px) { ... }
+
+// X-Large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { ... }
+
+// XX-Large devices (larger desktops, 1400px and up)
+@media (min-width: 1400px) { ... } -->

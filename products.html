@@ -1,0 +1,855 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chhabra Associates | Paint Shop </title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Arvo&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap" rel="stylesheet">   
+    <link rel="stylesheet" href="./css/products.css">
+    <link rel="stylesheet" href="/css/hamburger-menu.css">
+    <link rel="stylesheet" href="css/tablets.css" media="screen and (min-width: 768px) and (max-width:1023px)">
+    <link rel="stylesheet" href="css/mobiles.css" media="screen and (max-width: 767px)">
+    <link rel="stylesheet" href="css/desktop.css" media="screen and (min-width: 1024px) and (max-width:1366px)">
+
+    <link rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css"
+    integrity="undefined" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js" integrity="sha512-ZKNVEa7gi0Dz4Rq9jXcySgcPiK+5f01CqW+ZoKLLKr9VMXuCsw3RjWiv8ZpIOa0hxO79np7Ec8DDWALM0bDOaQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://kit.fontawesome.com/79c72f359e.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/raphael/2.3.0/raphael.min.js" integrity="sha512-tBzZQxySO5q5lqwLWfu8Q+o4VkTcRGOeQGVQ0ueJga4A1RKuzmAu5HXDOXLEjpbKyV7ow9ympVoa6wZLEzRzDg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="./animated-progress-circle/animated-progress-circle/jQuery.circleProgressBar.min.js"></script>
+</head>
+
+<body>
+    <!-- --- Navigation Bar ---  -->
+    <div class="container">
+        <div class="logo"><span>Chhabra</span> Associates</div>
+        <div class="navbar">
+            <ul>
+                <div class="menu-items">
+                <li><a href="index.html" class="home">Home</a></li>
+                <li><a href="portfolio.html" class="about_us">About Us</a></li>
+                <li><a href="products.html" class="products">Products</a></li>
+                <li><a href="register.html" class="sign">Register</a></li>
+                </div>
+                <li >
+                    <a href="#" class="cart cart-wrapper"><i class="fas fa-shopping-cart cart"></i></a>
+                    <div class="cart-desc">
+                        <h2>Your Cart Is Empty !!</h2>
+                        <a href="./cart.html" id="see-cart">See Your Cart </a>
+                        <a href="./products.html" id="shopping">Start Shopping</a>
+                    </div>
+                </li>
+
+                <!-- hamburgerMenu  -->
+                <li class="hamburger"> 
+                    <input type="checkbox" class="toggler">
+                    <div class="hamburger-wrap"> 
+                        <div></div>
+                    </div>
+                    <div class="menu">
+                        <div>
+                            <div>
+                                <ul>
+                                    <li><a href="index.html" class="home-ham">Home</a></li>
+                                    <li><a href="portfolio.html" class="about-us-ham" >About Us</a></li>
+                                    <li><a href="products.html" class="products-ham" >Products</a></li>
+                                    <li><a href="register.html" class="sign-ham">Register</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+        <a href="#scrollToHead" class="scroll-up"> <i class="fas fa-arrow-up"></i></a>
+    <!-- ---ALl Products ---  -->
+    <div class="headding" id="scrollToHead">
+        <h1><span>Top </span> Quality Products</h1>
+    </div>
+    <section class="all-products">
+        <div id="products">
+            <div class="product-part-2">
+                <div class="product-1">
+                   <div class="image"> <img src="./images/tractor.png"></div>
+                    <div class="product-desc">
+                        <h3> Asian Tractor Emulsion</h3>
+                        <div class="rating">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star-o" aria-hidden="true"></i>
+                        </div>
+                        <div class="full-page">
+                            <a href="./product_files/first-product.html"> View More</a>
+                        </div>
+                         <div class="categories">
+                        <p class="category" id="category-1">INTERIOR</p>
+                        <p class="category" id="category-2"><i class="fas fa-shipping-fast fa-2x"></i> FREE</p>
+                    </div>
+                    </div>
+                </div>
+                <div class="product-1">
+                    <div class="image"><img src="./images/royale-weather.png"></div>
+                    <div class="product-desc">
+                        <h3>Asian Royale Emulsion</h3>
+                        <div class="rating">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star-half" aria-hidden="true"></i>
+                        </div>
+                        <div class="full-page">
+                            <a href="./product_files/second-product.html"> View More</a>
+                        </div>
+                         <div class="categories">
+                        <p class="category" id="category-1">INTERIOR</p>
+                        <p class="category" id="category-2"><i class="fas fa-shipping-fast "></i> +200/-</p>
+                    </div>
+                    </div>
+                </div>
+                <div class="product-1">
+                    <div class="image"><img src="./images/ace-sparc.png"></div>
+                    <div class="product-desc">
+                        <h3> Asian Ace-Sparc Emulsion</h3>
+                        <div class="rating">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star-half" aria-hidden="true"></i>
+                            <i class="fa fa-star-o" aria-hidden="true"></i>
+                        </div>
+                        <div class="full-page">
+                            <a href="./product_files/third-product.html"> View More</a>
+                        </div>
+                         <div class="categories">
+                        <p class="category" id="category-1">EXTERIOR</p>
+                        <p class="category" id="category-2"><i class="fas fa-shipping-fast fa-2x"></i> FREE</p>
+                    </div>
+                    </div>
+                </div>
+                <div class="product-1">
+                    
+                    <div class="image"><img src="./images/apex.png"></div>
+                    <div class="product-desc">
+                        <h3> Asian Apex Emulsion</h3>
+                        <div class="rating">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star-half" aria-hidden="true"></i>
+                        </div>
+                        <div class="full-page">
+                            <a href="./product_files/fourth-product.html"> View More</a>
+                        </div>
+                         <div class="categories">
+                        <p class="category" id="category-1">EXTERIOR</p>
+                        <p class="category" id="category-2"><i class="fas fa-shipping-fast fa-2x"></i> FREE</p>
+                    </div>
+                    </div>
+                </div>
+          
+                <div class="product-1">
+                    
+                    <div class="image"><img src="./images/apcolite.png"></div>
+                    <div class="product-desc">
+                        <h3>Asian Apcolite Emulsion</h3>
+                        <div class="rating">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star-o" aria-hidden="true"></i>
+                        </div>
+                        <div class="full-page">
+                            <a href="./product_files/fifth-product.html"> View More</a>
+                        </div>
+                         <div class="categories">
+                        <p class="category" id="category-1">INTERIOR</p>
+                        <p class="category" id="category-2"><i class="fas fa-shipping-fast fa-2x"></i> FREE</p>
+                    </div>
+                    </div>
+                </div>
+                <div class="product-1">
+                   
+                    <div class="image"><img src="./images/ace.png"></div>
+                    <div class="product-desc">
+                        <h3>Asian Ace Emulsion</h3>
+                        <div class="rating">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star-o" aria-hidden="true"></i>
+                        </div>
+                        <div class="full-page">
+                            <a href="./product_files/six-product.html"> View More</a>
+                        </div>
+                         <div class="categories">
+                        <p class="category" id="category-1">EXTERIOR</p>
+                        <p class="category" id="category-2"><i class="fas fa-shipping-fast fa-2x"></i> FREE</p>
+                    </div>
+                    </div>
+                </div>
+                <div class="product-1">
+                    
+                    <div class="image"><img src="./images/tractor-sparc.png"></div>
+                    <div class="product-desc">
+                        <h3>Asian Tractor-Sp Emulsion</h3>
+                        <div class="rating">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star-half" aria-hidden="true"></i>
+                            <i class="fa fa-star-o" aria-hidden="true"></i>
+                        </div>
+                        <div class="full-page">
+                            <a href="./product_files/seven-product.html"> View More</a>
+                        </div>
+                         <div class="categories">
+                        <p class="category" id="category-1">INTERIOR</p>
+                        <p class="category" id="category-2"><i class="fas fa-shipping-fast fa-2x"></i> FREE</p>
+                    </div>
+                    
+                    </div>
+                </div>
+                <div class="product-1">
+                    
+                    <div class="image"><img src="./images/asian_ext_primer.png"></div>
+                    <div class="product-desc">
+                        <h3>Asian Wall Primer</h3>
+                        <div class="rating">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star-half" aria-hidden="true"></i>
+                        </div>
+                        <div class="full-page">
+                            <a href="./product_files/eigth-product.html"> View More</a>
+                        </div>
+                         <div class="categories">
+                        <p class="category" id="category-1">EXTERIOR</p>
+                        <p class="category" id="category-2"><i class="fas fa-shipping-fast fa-2x"></i> FREE</p>
+                    </div>
+                    </div>
+                </div>
+
+                <div class="product-1">
+                   
+                    <div class="image"><img src="./images/asian_int_primer.png"></div>
+                    <div class="product-desc">
+                        <h3>Asian Wall Primer</h3>
+                        <div class="rating">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star-o" aria-hidden="true"></i>
+                        </div>
+                        <div class="full-page">
+                            <a href="./product_files/ninth-prod.html"> View More</a>
+                        </div>
+                         <div class="categories">
+                        <p class="category" id="category-1">INTERIOR</p>
+                        <p class="category" id="category-2"><i class="fas fa-shipping-fast fa-2x"></i> FREE</p>
+                    </div>
+                    </div>
+                </div>
+                <div class="product-1">
+                    
+                    <div class="image"><img src="./images/asian_enamel.png"></div>
+                    <div class="product-desc">
+                        <h3>Asian Apcolite Enamel</h3>
+                        <div class="rating">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star-half" aria-hidden="true"></i>
+                        </div>
+                        <div class="full-page">
+                            <a href="./product_files/ten-prod.html"> View More</a>
+                        </div>
+                         <div class="categories">
+                        <p class="category" id="category-1">ENAMEL</p>
+                        <p class="category" id="category-2"><i class="fas fa-shipping-fast fa-2x"></i> FREE</p>
+                    </div>
+                    </div>
+                </div>
+              
+                <div class="product-1">
+                    
+                    <div class="image"><img src="./images/british-int.png"></div>
+                    <div class="product-desc">
+                        <h3>British Interior Emulsion</h3>
+                        <div class="rating">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star-half" aria-hidden="true"></i>
+                        </div>
+                        <div class="full-page">
+                            <a href="./product_files/thirteen-prod.html"> View More</a>
+                        </div>
+                         <div class="categories">
+                        <p class="category" id="category-1">INTERIOR</p>
+                        <p class="category" id="category-2"><i class="fas fa-shipping-fast fa-2x"></i> +100/-</p>
+                    </div>
+                    </div>
+                </div>
+                <div class="product-1">
+                    
+                   <div class="image"><img src="./images/british-shingar.png"></div> 
+                    <div class="product-desc">
+                        <h3>British Shingar Emulsion</h3>
+                        <div class="rating">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star-o" aria-hidden="true"></i>
+                        </div>
+                        <div class="full-page">
+                            <a href="./product_files/fourteen-prod.html"> View More</a>
+                        </div>
+                         <div class="categories">
+                        <p class="category" id="category-1">EXTERIOR</p>
+                        <p class="category" id="category-2"><i class="fas fa-shipping-fast fa-2x"></i> FREE</p>
+                    </div>
+                    </div>
+                </div>
+                <div class="product-1">
+                    
+                   <div class="image"><img src="./images/british-enamel.png"></div> 
+                    <div class="product-desc">
+                        <h3>British Glo Enamel</h3>
+                        <div class="rating">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                        </div>
+                        <div class="full-page">
+                            <a href="./product_files/fifteen-prod.html"> View More</a>
+                        </div>
+                         <div class="categories">
+                        <p class="category" id="category-1">ENAMEL</p>
+                        <p class="category" id="category-2"><i class="fas fa-shipping-fast fa-2x"></i> FREE</p>
+                    </div>
+                    </div>
+                </div>
+                <div class="product-1">
+                    
+                    <div class="image"><img src="./images/berger-int-primer.png"></div>
+                    <div class="product-desc">
+                        <h3>Berger Int Primer</h3>
+                        <div class="rating">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star-half" aria-hidden="true"></i>
+                            <i class="fa fa-star-o" aria-hidden="true"></i>
+                        </div>
+                        <div class="full-page">
+                            <a href="./product_files/sixteenth-prod.html"> View More</a>
+                        </div>
+                         <div class="categories">
+                        <p class="category" id="category-1">INTERIOR</p>
+                        <p class="category" id="category-2"><i class="fas fa-shipping-fast fa-2x"></i> FREE</p>
+                    </div>
+                    </div>
+                </div>
+
+
+                <div class="product-1">
+                   
+                    <div class="image"><img src="./images/berger-ext-primer.png"></div>
+                    <div class="product-desc">
+                        <h3>Berger Ext Primer</h3>
+                        <div class="rating">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star-o" aria-hidden="true"></i>
+                        </div>
+                        <div class="full-page">
+                            <a href="./product_files/seventeen-prod.html"> View More</a>
+                        </div>
+                         <div class="categories">
+                        <p class="category" id="category-1">EXTERIOR</p>
+                        <p class="category" id="category-2"><i class="fas fa-shipping-fast fa-2x"></i> FREE</p>
+                    </div>
+                    </div>
+                </div>
+                <div class="product-1">
+                   
+                    <div class="image"><img src="./images/berger-bison.png"></div>
+                    <div class="product-desc">
+                        <h3>Berger Bison Emulsion</h3>
+                        <div class="rating">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star-half" aria-hidden="true"></i>
+                        </div>
+                        <div class="full-page">
+                            <a href="./product_files/eighteen-prod.html"> View More</a>
+                        </div>
+                         <div class="categories">
+                        <p class="category" id="category-1">INTERIOR</p>
+                        <p class="category" id="category-2"><i class="fas fa-shipping-fast fa-2x"></i> FREE</p>
+                    </div>
+                    </div>
+                </div>
+                <div class="product-1">
+                    
+                    <div class="image"><img src="./images/berger-ext.png"></div>
+                    <div class="product-desc">
+                        <h3>Berger Walmasta Emulsion</h3>
+                        <div class="rating">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star-half" aria-hidden="true"></i>
+                        </div>
+                        <div class="full-page">
+                            <a href="./product_files/nineteen.html"> View More</a>
+                        </div>
+                         <div class="categories">
+                        <p class="category" id="category-1">EXTERIOR</p>
+                        <p class="category" id="category-2"><i class="fas fa-shipping-fast fa-2x"></i> FREE</p>
+                    </div>
+                    </div>
+                </div>
+                <div class="product-1">
+                   
+                    <div class="image"><img src="./images/berger-enamel.png" ></div>
+                    <div class="product-desc">
+                        <h3>Berger Luxol Enamel</h3>
+                        <div class="rating">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star-o" aria-hidden="true"></i>
+                        </div>
+                        <div class="full-page">
+                            <a href="./product_files/twenty.html"> View More</a>
+                        </div>
+                         <div class="categories">
+                        <p class="category" id="category-1">ENAMEL</p>
+                        <p class="category" id="category-2"><i class="fas fa-shipping-fast fa-2x"></i> FREE</p>
+                    </div>
+                    </div>
+                </div>
+                <div class="product-1">
+                    
+                    <div class="image"><img src="./images/nerolac-ext-primer.png"></div>
+                    <div class="product-desc">
+                        <h3>Nerolac Primer</h3>
+                        <div class="rating">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star-half" aria-hidden="true"></i>
+
+                        </div>
+                        <div class="full-page">
+                            <a href="./product_files/twenty_one.html"> View More</a>
+                        </div>
+                         <div class="categories">
+                        <p class="category" id="category-1">EXTERIOR</p>
+                        <p class="category" id="category-2"><i class="fas fa-shipping-fast fa-2x"></i> FREE</p>
+                    </div>
+                    </div>
+                </div>
+                
+                <div class="product-1">
+                    
+                    <div class="image"><img src="./images/nerolac-enamel.jpg"></div>
+                    <div class="product-desc">
+                        <h3>Nerolac Synthetic Enamel</h3>
+                        <div class="rating">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star-o" aria-hidden="true"></i>
+                        </div>
+                        <div class="full-page">
+                            <a href="./product_files/twenty-four.html"> View More</a>
+                        </div>
+                         <div class="categories">
+                        <p class="category" id="category-1">ENAMEL</p>
+                        <p class="category" id="category-2"><i class="fas fa-shipping-fast fa-2x"></i> FREE</p>
+                    </div>
+                    </div>
+                </div>
+         
+                <div class="product-1">
+                    
+                    <div class="image"><img src="./images/brown-paper.jpg"></div>
+                    <div class="product-desc">
+                        <h3>Brown Paper</h3>
+                        <div class="rating">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star-o" aria-hidden="true"></i>
+                        </div>
+                        <div class="full-page">
+                            <a href="./product_files/twenty-five.html"> View More</a>
+                        </div>
+                         <div class="categories">
+                        <p class="category" id="category-1">OTHERS</p>
+                        <p class="category" id="category-2"><i class="fas fa-shipping-fast fa-2x"></i> FREE</p>
+                    </div>
+                    </div>
+                </div>
+                <div class="product-1">
+                   
+                    <div class="image"><img src="./images/brush.jpg"></div>
+                    <div class="product-desc">
+                        <h3>Aman Brushes</h3>
+                        <div class="rating">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star-half" aria-hidden="true"></i>
+                        </div>
+                        <div class="full-page">
+                            <a href="./product_files/twenty-six.html"> View More</a>
+                        </div>
+                         <div class="categories">
+                        <p class="category" id="category-1">OTHERS</p>
+                        <p class="category" id="category-2"><i class="fas fa-shipping-fast fa-2x"></i> FREE</p>
+                    </div>
+                    </div>
+                </div>
+                <div class="product-1">
+                  
+                    <div class="image"><img src="./images/birla-putty.png"></div>
+                    <div class="product-desc">
+                        <h3>Birla Wall Putty</h3>
+                        <div class="rating">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star-half" aria-hidden="true"></i>
+                        </div>
+                        <div class="full-page">
+                            <a href="./product_files/twenty-seven.html"> View More</a>
+                        </div>
+                         <div class="categories">
+                        <p class="category" id="category-1">OTHERS</p>
+                        <p class="category" id="category-2"><i class="fas fa-shipping-fast fa-2x"></i> FREE</p>
+                    </div>
+                    </div>
+                </div>
+                <div class="product-1">
+                    
+                    <div class="image"><img src="./images/roller.jpg"></div>
+                    <div class="product-desc">
+                        <h3>Rollers</h3>
+                        <div class="rating">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star-half" aria-hidden="true"></i>
+                        </div>
+                        <div class="full-page">
+                            <a href="./product_files/twenty-eight.html"> View More</a>
+                        </div>
+                         <div class="categories">
+                        <p class="category" id="category-1">OTHERS</p>
+                        <p class="category" id="category-2"><i class="fas fa-shipping-fast fa-2x"></i> FREE</p>
+                    </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+    </section>
+    
+    <!-- Brand Recommendations  -->
+    <div class="headding" id="brand-head">
+        <p>FROM OUR CUSTOMERS</p>
+        <h1><span>Brand  </span> Recommendations</h1>
+        <div class="recommendations">
+            <!-- RECOMMENDATION 1 -->
+            <div class="recommendation brandreco--part1">
+                <div class="heading">For Interiors</div>
+                <div class="progress-bar">
+                    <div class="image">
+                        <img src="./images/interior-brand.jpg" style="border-radius: 6px;">
+                    </div>
+                   <div class="percent">
+                    <p class="percent-value">85%</p>
+                    <p><img src="./images/2560px-Asian_Paints_Logo.svg.png" width="170px" height="40px" style="margin-top: 15px;"></p>
+                   </div>
+                   <div class="percent" >
+                    <p class="percent-value">83%</p>
+                    <p><img src="./images/berger-text.jpg" width="170px" height="40px" style="margin-top: 15px;"></p>
+
+                   </div>
+                   <div class="percent">
+                    <p class="percent-value" style="color:black">72%</p>
+                    <p><img src="./images/british-paints-text.jpg" width="170px" height="40px" style="margin-top: 15px;"></p>
+
+                   </div>
+                </div>
+            </div>
+
+            <!-- Mobile Recommendation  -->
+            <div class="container-mob">
+                <h2 class="my-skills">My Skills</h2>
+                <div class="bar-1">
+                <div class="title" style="color: rgba(0, 0, 0, 0.795);">Asian Paints</div>
+                <div class="bar" data-width="87%">
+                  <div class="bar-inner">
+                    
+                  </div>
+                  <div class="bar-percent">87%</div>
+                </div>
+                </div>
+                <div class="bar-1">
+                <div class="title" style="color: rgba(0, 0, 0, 0.795);">Berger Paints</div>
+                <div class="bar" data-width="85%">
+                  <div class="bar-inner" style="background: #084c61;">
+                    
+                  </div>
+                  <div class="bar-percent">85%</div>
+                </div>
+                
+                </div>
+            
+                <div class="bar-1">
+                <div class="title" style="color: rgba(0, 0, 0, 0.795)">British Paints</div>
+                <div class="bar" data-width="78%">
+                  <div class="bar-inner" style="background: #5a68a5;">
+                    
+                  </div>
+                  <div class="bar-percent">78%</div>
+                </div>
+                </div>
+              </div>
+              
+           
+            <!-- Recommendation 2 -->
+            <div class="recommendation brandreco--part2">
+                <div id="headds">For Exteriors</div>
+                <div class="progress-bar">
+                   <div class="percent">
+                    <p class="percent-value">75%</p>
+                    <p><img src="./images/2560px-Asian_Paints_Logo.svg.png" width="170px" height="40px" style="margin-top: 15px;"></p>
+                   </div>
+                   <div class="percent" >
+                    <p class="percent-value">82%</p>
+                    <p><img src="./images/berger-text.jpg" width="170px" height="40px" style="margin-top: 15px;"></p>
+
+                   </div>
+                   <div class="percent">
+                    <p class="percent-value" style="color:black">86%</p>
+                    <p><img src="./images/british-paints-text.jpg" width="170px" height="40px" style="margin-top: 15px;"></p>
+
+                   </div>
+                   <div class="image">
+                    <img src="./images/exterior-brand.jpg" style="border-radius: 6px;">
+                </div>
+                </div>
+            </div>
+
+            <!-- Recommendation -3  -->
+            <div class="recommendation brandreco--part3">
+                <div class="heading">For Metal and Wood</div>
+                <div class="progress-bar">
+                    <div class="image">
+                        <img src="./images/enamel-brand.jpg" style="border-radius: 6px;">
+                    </div>
+                   <div class="percent">
+                    <p class="percent-value">91%</p>
+                    <p><img src="./images/2560px-Asian_Paints_Logo.svg.png" width="170px" height="40px" style="margin-top: 15px;"></p>
+                   </div>
+                   <div class="percent" >
+                    <p class="percent-value">85%</p>
+                    <p><img src="./images/berger-text.jpg" width="170px" height="40px" style="margin-top: 15px;"></p>
+
+                   </div>
+                   <div class="percent">
+                    <p class="percent-value" style="color:black">84%</p>
+                    <p><img src="./images/british-paints-text.jpg" width="170px" height="40px" style="margin-top: 15px;"></p>
+
+                   </div>
+                </div>
+            </div>
+
+
+
+
+
+
+        </div>
+    </div>
+
+    <!-- ------Footer ------  -->
+    <footer id="foot">
+        <h1><span>Want To </span>Connect With Us</h1>
+        <div class="foot-cover">
+            <div class="address">
+                <h2> <span>Our</span> Address</h2>
+                <h4 class="address-desc">Shop No.10, Trikoni Market ,Opp Urban Estate Ph-2, Sirhind Byepass Road, Patiala, Punjab</h4>
+                <h2 class="left"><span>Timings</span></h2>
+                <h4>
+                    <ul>
+                        <li>Mon-Fri : 8:00am to 8:00pm</li>
+                        <li>Saturday : 8:00am to 5:00pm</li>
+                        <li>Sunday : Closed</li>
+                    </ul>
+                </h4>
+            </div>
+            
+            <div class="feedback"><form action="mailto:bkoraclee@gmail.com" method="POST">
+                <table>
+                    <tr>
+                        <td><label for="name">Name: </label></td>
+                        <td><input type="text" id="name" required></td>
+                    </tr>
+                    <tr>
+                        <td><label for="name">Email : </label></td>
+                        <td><input type="email" id="email" required></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <textarea name="feedback-text" id="feedback" cols="31" rows="7" placeholder="Enter your feedback here "></textarea>
+                        </td>
+                    </tr>
+                </table>
+                <input type="submit" name="submit" value="Send" class="sub">
+                
+            </form></div> 
+            <div class="connect">
+                <h2 class="find-us"><span>Find</span> Us</h2>
+                <div class="social"><img src="./images/gmail.png" alt="" width="30px" height="30px"><p>chhabrapaints@gmail.com</p></div>
+                <div class="social"><img src="./images/facebook.png" alt="" width="30px" height="30px"><p>_chhabra_paints</p></div>
+                <div class="social"><img src="./images/twitter.png" alt="" width="30px" height="30px"><p>paints_chhabra</p></div>
+                <div class="social"><img src="./images/instagram.png" alt="" width="30px" height="30px"><p>chhabra_paints</p></div>
+            </div>
+ 
+        </div>
+        <h4 class="copy">&copy; Copyright Chhabra Associates 2021</h4>
+    </footer>
+<script>
+
+    // Showing Cart Description 
+var cartOpen = false;
+document.querySelector('.cart').addEventListener('click',()=>{
+    if(cartOpen){
+        document.querySelector('.cart-desc').style.display = "none";
+        cartOpen = false
+    }else{
+        cartOpen = true;
+        document.querySelector('.cart-desc').style.display = "flex";
+    }
+})
+
+        $(function(){$('.percent').percentageLoader({
+            strokeWidth: 15,
+            bgColor:'#d9d9d9',
+            ringColor:'#780979',
+            textColor: 'black',
+            fontSize: '30px',
+        })});
+ 
+        document.querySelectorAll('.category').forEach(item=>{
+            if(item.innerText ==="INTERIOR"){
+                item.style.backgroundColor = "rgba(218, 64,64)";
+            }else if(item.innerText === "FREE"){
+                item.style.backgroundColor = "rgba(18, 140, 61, 0.925)";
+            }else if(item.innerText === "EXTERIOR"){
+                item.style.backgroundColor = "#e9692c";
+            }else if(item.innerText === "ENAMEL"){
+                item.style.backgroundColor = "#A0522D";
+            }else if(item.innerText === "OTHERS"){
+                item.style.backgroundColor = "#C68F39";
+            }else{
+                item.style.backgroundColor = "rgba(18, 140, 61, 0.925)";
+            }
+        })
+
+        $(document).ready(function(){
+        $('.brandreco--part1').waypoint(function(){
+            $('.brandreco--part1').addClass('animated bounceInLeft');
+        },{
+            offset:'50%'
+        })
+    })
+
+    $(document).ready(function(){
+        $('.brandreco--part2').waypoint(function(){
+            $('.brandreco--part2').addClass('animated bounceInRight');
+        },{
+            offset:'50%'
+        })
+    })
+
+    $(document).ready(function(){
+        $('.brandreco--part3').waypoint(function(){
+            $('.brandreco--part3').addClass('animated bounceInLeft');
+        },{
+            offset:'50%'
+        })
+    })
+
+    $(".bar").each(function(){
+  $(this).find(".bar-inner").animate({
+    width: $(this).attr("data-width")
+  },2000)
+});
+
+window.addEventListener('scroll',()=>{
+    const scrol = window.scrollY;
+    if(scrol>=740){
+        document.querySelector('.scroll-up').style.opacity = '1'
+    }else{
+        document.querySelector('.scroll-up').style.opacity = '0'
+    }
+})
+
+function myFunction(x) {
+  if (x.matches) { // If media query matches
+    document.querySelector('.logo').innerHTML = `<span>C</span>A`;
+    document.querySelector('.logo').style.fontFamily = 'Quicksand, sans-serif';
+  }else{
+    document.querySelector('.logo').innerHTML = `<span>Chhabra</span>Associates`;
+  }
+}
+
+var x = window.matchMedia("(max-width: 500px)")
+myFunction(x) // Call listener function at run time
+x.addListener(myFunction) // Attach listener function on state changes
+
+
+    </script>
+</body>
+</html>

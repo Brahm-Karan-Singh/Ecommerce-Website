@@ -1,0 +1,413 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Quicksand', sans-serif;
+  }
+  body{
+      overflow-x: hidden;
+  }
+    
+   /* --- Utility Classes ---  */
+  .btn{
+     background-color: rgb(231, 138, 108);
+     padding: 1rem 0;
+     color:white;
+     border-radius: 1rem;
+     border:none;
+     font-size: 1.2rem;
+     cursor:pointer;
+  }
+  .btn:hover{
+      background: rgb(223, 100, 59) ;
+  }
+  
+  input{
+      display: block;
+      padding:4px;
+      height: 1.7rem;
+  }
+  label{
+      color:whitesmoke;
+  
+  }
+  
+  span{
+      color:coral;
+  }
+  
+  .p-1{padding:1rem;}
+  .p-2{padding:2rem;}
+  .p-3{padding:3rem;}
+  
+  .py-1{padding:1rem 0;}
+  .py-2{padding:2rem 0;}
+  .py-3{padding:4rem 0;}
+  
+  p{
+      text-align: justify;
+      line-height: 1.7rem;
+      font-size: 1rem;
+      color: black;
+      /* padding: 1rem; */
+  }
+
+  /* For scrolling to top  */
+/* .scroll-up{
+    position: fixed;
+    top: 90%;
+    right:1.5%;
+    padding:0.8rem;
+    background-color: rgba(0, 0, 255, 0.281);
+    border-radius:40%;
+    cursor:pointer;
+    opacity: 0;
+    z-index:2;
+}
+.scroll-up:hover{
+    background-color: rgba(0, 0, 255, 0.589);
+
+}
+.scroll-up i{
+    color:white;
+} */
+
+  /* For styling scrollbars  */
+::-webkit-scrollbar {
+    width: 5px;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: rgb(4, 171, 226); 
+    border-radius: 4px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: rgb(3, 137, 182); 
+  }
+  
+  /* --- Navigation Bar ---  */
+  .container{
+    max-width: 1500px;
+    width: 100%;
+    padding: 0 5rem;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    top:0;
+    right:0;
+    left:0;
+    margin:0 auto;
+    z-index: 2;
+}
+
+.container::before {
+    content: '';
+    position: fixed;
+    left:0;
+    top:0;
+    width:100vw;
+    background-color: #333;
+    height: 54px;
+    z-index: 2;
+}
+
+.cart{
+    color:white;
+    transition: all 0.5s ease-in;
+}
+/* Cart Dropdown  */
+.cart-wrapper{
+    position:relative;
+}
+.cart-desc{
+    position:absolute;
+    top:56px;
+    right: 0%;
+    width: 200px;
+    background: #fff;
+    border: 1px solid #050748;
+    color:black;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    flex-direction:column ;
+    padding:1rem;
+    transition: all 0.4s ease-in;
+}
+.none{
+    display: none;
+}
+.cart-desc h2{
+    font-size: 1rem;
+    flex: 1;
+    margin-bottom:15px;
+}
+.cart-desc #see-cart, .cart-desc #shopping{
+    flex:1;
+    padding:0 ;
+    margin-bottom:15px;
+}
+.cart-desc #see-cart{
+    padding:10px 20px;
+    margin:1rem;
+    text-align: center;
+    color:white;
+    background-color: coral;
+    border: 1px solid white;
+    border-radius: 10px;
+    font-size:0.8rem;
+    transition : all 0.4s ease-in-out;
+}
+.cart-desc #see-cart:hover{
+    color:coral;
+    background-color: white;
+    border: 1px solid coral;
+}
+.cart-desc #shopping{
+    font-size:0.8rem;
+    color:coral;
+    text-decoration: underline;
+}
+
+.container .logo{
+    font-size: 1.4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+    color:white;
+}
+
+.container .navbar ul{
+    list-style-type: none;
+    display: flex;
+}
+.container .navbar ul li{
+    position: relative;
+    z-index: 2;
+}
+
+.container .navbar ul li a{
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1.1rem;
+    padding: 1rem 1.5rem;
+    color: white;
+}
+  .products{
+      background-color: coral;
+  }
+  .products-ham{
+      background-color: coral;
+  }
+
+  /* ---Product---  */
+  .product-desc .product{
+    display: flex;
+    align-items: center;
+    width:60%;
+    height: 390px;
+    margin: 0 auto;
+    margin-top: 7rem;
+}
+.product-desc .product img{
+    width:400px;
+    height: 400px;
+}
+.product-desc .description{
+    height: 100%;
+}
+.product-desc .description h2{
+    margin-bottom: 1.5rem;
+}
+.product-desc .description .rating{
+    color: coral;
+    padding:0.8rem 0;
+}
+.product-desc .description .quantitative{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.product-desc .description .quantitative input{
+    width:7rem;
+}
+.product-desc .description .quantitative select{
+    width:10rem;
+    height: 2rem;
+    margin-right: 8rem;
+}
+
+button{
+    display: block;
+    width:8rem;
+    height:2.8rem;
+    margin:1.5rem 0;
+    background-color: coral;
+    color:whitesmoke;
+    border:1px solid coral;
+    border-radius: 9px;
+    cursor: pointer;
+}
+button:hover{
+    background-color: rgb(218, 72, 19);
+}
+
+/* Related Products  */
+#products{
+    margin-top:5rem;
+}
+#products .product{
+    margin: 0 8rem;
+}
+#products h1{
+    text-align: center;
+    color:rgba(0, 0, 0, 0.932);
+    font-size: 2rem;
+    font-weight: bold;
+    padding-top:3rem;
+}
+
+#products .product{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    column-gap:40px;
+}
+#products .product .product-1{
+    text-align: center;
+    transition: transform 0.5s ;
+}
+#products .product .product-1:hover{
+    transform:translateY(-7px);
+
+}
+#products .product .product-1 .product-desc{
+    margin-top: 0.65rem;
+    width:100%;
+    text-align: center;
+}
+#products .product .product-1 .product-desc .rating{
+    color:#ff523b;
+}
+#products .product .product-1 .product-desc h4{
+    color:#333;
+}
+
+/* ---- Footer ----  */
+#foot{
+    background-color: #333;
+    margin-top: 6rem;
+}
+#foot .foot-cover{
+    display: flex;
+    align-items: start;
+    justify-content: space-evenly;
+    padding:0rem 4rem;
+    padding-bottom: 1.2rem;
+    /* background-color: teal; */
+}
+
+#foot .foot-cover .address{
+    /* background-color: aqua; */
+    color: whitesmoke;
+    line-height: 1.5rem;
+}
+#foot .foot-cover .address h2{
+    text-align: center;
+    padding-bottom:0.7rem;
+}
+#foot .foot-cover .timings h2{
+    padding-bottom:0.7rem;
+}
+#foot .foot-cover .address h4{
+   /* word-spacing: 0.2rem; */
+   width:80%;
+   margin:0 auto;
+   text-align: center;
+   font-weight: lighter;
+   line-height: 1.8rem;  
+}
+#foot .foot-cover .address ul{
+    list-style-type: none;
+}
+#foot .foot-cover .address .left{
+    text-align: center;
+    padding-top: 0.9rem;
+}
+#foot .foot-cover .timings ul{
+    list-style: none;
+}
+#foot .foot-cover .timings .list{
+    line-height: 2.5rem;
+}
+#foot .foot-cover .timings{
+    color: whitesmoke;
+    width: 14rem;
+    line-height: 1.5rem;
+}
+#foot h1{
+    text-align: center;
+    color:whitesmoke;
+    font-size: 2rem;
+    font-weight: bold;
+    padding-top:1rem;
+    margin-bottom: 2.3rem;
+}
+.feedback,.connect{
+    line-height: 1.5rem;
+    margin:0 auto;
+    /* background-color: yellow;f */
+}
+
+#foot .foot-cover .feedback .sub{
+    margin: 0 auto;
+    color: whitesmoke;
+    width: 6rem;
+    height: 2rem;
+    border-radius: 0.5rem;
+    background-color: coral;
+    border:none;
+    font-size: large;
+    font-weight: bold;
+    cursor: pointer;
+}
+#foot .foot-cover .feedback .sub:hover{
+    background-color: rgb(216, 87, 40);
+}
+#foot .foot-cover .feedback textarea{
+    padding:0.5rem;
+}
+#foot .foot-cover .feedback textarea:focus{
+    border-color: coral;
+}
+#foot .foot-cover .feedback input{
+    margin-bottom: 5px;
+}
+
+#foot .foot-cover .connect h2{
+    color: white;
+    text-align: center;
+    margin-bottom:0.9rem;
+}
+#foot .foot-cover .connect .social{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom:0.9rem;
+}
+#foot .foot-cover .connect .social p{
+    flex: 1;
+    display: inline;
+    padding-left: 0.9rem;
+    cursor: pointer;
+    color:white;
+}
+#foot .copy{
+    color:whitesmoke;
+    text-align: center;
+    padding-bottom:1.3rem;
+    font-weight: lighter;
+}

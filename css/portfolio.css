@@ -1,0 +1,459 @@
+
+/* -----Navigation Bar ---  */
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Quicksand', sans-serif;
+  }
+  body{
+      overflow-x: hidden;
+  }
+    
+   /* --- Utility Classes ---  */
+  .btn{
+     background-color: rgb(231, 138, 108);
+     padding: 1rem 0;
+     color:white;
+     border-radius: 1rem;
+     border:none;
+     font-size: 1.2rem;
+     cursor:pointer;
+  }
+  .for-bg{
+      width:70vw;
+      height: 100vh;
+      /* background-color: coral; */
+      margin:0 auto;
+      padding-top: 3.6rem;
+  }
+  .back{
+      position: relative;
+      top:-5.6%;
+      left: 0;
+      width: 100%;
+      height: 105.6%;
+      margin-top:0;
+      background-color: rgba(0, 0, 0, 0.6);
+  }
+  .btn:hover{
+      background: rgb(223, 100, 59) ;
+  }
+  
+  input{
+      display: block;
+      padding:4px;
+      height: 1.7rem;
+  }
+  label{
+      color:whitesmoke;
+  
+  }
+  
+  span{
+      color:coral;
+  }
+  
+  .p-1{padding:1rem;}
+  .p-2{padding:2rem;}
+  .p-3{padding:3rem;}
+  
+  .py-1{padding:1rem 0;}
+  .py-2{padding:2rem 0;}
+  .py-3{padding:4rem 0;}
+  
+  /* For styling scrollbars  */
+::-webkit-scrollbar {
+    width: 5px;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: rgb(4, 171, 226); 
+    border-radius: 4px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: rgb(3, 137, 182); 
+  }
+  
+  /* --- Navigation Bar ---  */
+  .container{
+    max-width: 1500px;
+    width: 100%;
+    padding: 0 5rem;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    top:0;
+    right:0;
+    left:0;
+    margin:0 auto;
+    z-index: 2;
+}
+
+.container::before {
+    content: '';
+    position: fixed;
+    left:0;
+    top:0;
+    width:100vw;
+    background-color: #333;
+    height: 54px;
+    z-index: 2;
+}
+
+.cart{
+    color:white;
+    transition: all 0.5s ease-in;
+}
+/* Cart Dropdown  */
+.cart-wrapper{
+    position:relative;
+}
+.cart-desc{
+    position:absolute;
+    top:56px;
+    right: 0%;
+    width: 200px;
+    background: #fff;
+    border: 1px solid #050748;
+    color:black;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    flex-direction:column ;
+    padding:1rem;
+    transition: all 0.4s ease-in;
+}
+.none{
+    display: none;
+}
+.cart-desc h2{
+    font-size: 1rem;
+    flex: 1;
+    margin-bottom:15px;
+}
+.cart-desc #see-cart, .cart-desc #shopping{
+    flex:1;
+    padding:0 ;
+    margin-bottom:15px;
+}
+.cart-desc #see-cart{
+    padding:10px 20px;
+    margin:1rem;
+    text-align: center;
+    color:white;
+    background-color: coral;
+    border: 1px solid white;
+    border-radius: 10px;
+    font-size:0.8rem;
+    transition : all 0.4s ease-in-out;
+}
+.cart-desc #see-cart:hover{
+    color:coral;
+    background-color: white;
+    border: 1px solid coral;
+}
+.cart-desc #shopping{
+    font-size:0.8rem;
+    color:coral;
+    text-decoration: underline;
+}
+
+.container .logo{
+    font-size: 1.4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+    color:white;
+}
+
+.container .navbar ul{
+    list-style-type: none;
+    display: flex;
+}
+.container .navbar ul li{
+    position: relative;
+    z-index: 2;
+}
+
+.container .navbar ul li a{
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1.1rem;
+    padding: 1rem 1.5rem;
+    color: white;
+}
+
+.aboutUs{
+    background-color: coral;
+}
+.aboutUs-ham{
+    background-color: coral;
+}
+
+/* ---- Intro Photo ----  */
+#intro{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.bg{
+    background: url('../images/about-us-1.jpg') no-repeat center center/cover;
+    overflow: auto;
+}
+/* Intro Text   */
+#intro-text{
+    margin-top:10rem;
+    margin-bottom:11rem;
+}
+.intro{
+    width:65vw;
+    margin:0 auto;
+    color:rgba(0, 0, 0, 0.842);
+    text-align: justify;
+    text-align-last:center ;
+    font-size: 1.6rem;
+}
+
+/* Qualities */
+.qualities{
+    width: 80vw;
+    margin:0 auto;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10rem;
+}
+.quality{
+    display: flex;
+    flex-direction: column;
+    width: 27%;
+}
+.quality i{
+    color: rgba(0, 0, 0, 0.671);
+    text-align: center;
+    font-size: 3rem;
+}
+.quality h3{
+    padding:22px;
+    color: black;
+    font-weight: bold;
+    font-size: 1.2rem;
+    text-align: center;
+}
+.quality p{
+    color:rgba(0, 0, 0, 0.753);
+    text-align: center;
+    line-height: 1.8rem;
+}
+
+/* Our Company Values  */
+.company-values{
+    background-color:rgba(208, 33, 51, 0.815);
+    width:100vw;
+    height: 80vh;
+    margin-bottom: 8rem;
+    position: relative;
+    display: flex;
+    color: white;
+}
+.company-values::before{
+    content:"";
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url(../images/about-us-2.jpg) no-repeat center center/cover;
+    z-index: -1;
+}
+.company-values .heading{
+    flex:3;
+    font-size: 3.8rem;
+    font-weight: bold;
+    color:white;
+    padding-top:4.5rem;
+    padding-left:7rem;
+}
+
+.values{
+    flex:5;
+    display:grid;
+    grid-template-columns: repeat(2,400px);
+    column-gap: 2rem;
+    margin:3rem 1rem;
+    line-height: 3rem;
+}
+.value{
+    padding-top:2rem;
+}
+.value p{
+    line-height: 1.5rem;
+    color:rgba(255, 255, 255, 0.76);
+    width:300px;
+    text-align: justify;
+}
+
+/* Footer  */
+#foot{
+    background-color: #333;
+    margin-top: 6rem;
+}
+#foot .foot-cover{
+    display: flex;
+    align-items: start;
+    justify-content: space-evenly;
+    padding:0rem 4rem;
+    padding-bottom: 1.2rem;
+    /* background-color: teal; */
+}
+
+#foot .foot-cover .address{
+    /* background-color: aqua; */
+    color: whitesmoke;
+    line-height: 1.5rem;
+}
+#foot .foot-cover .address h2{
+    text-align: center;
+    padding-bottom:0.7rem;
+}
+#foot .foot-cover .timings h2{
+    padding-bottom:0.7rem;
+}
+#foot .foot-cover .address h4{
+   /* word-spacing: 0.2rem; */
+   width:80%;
+   margin:0 auto;
+   text-align: center;
+   font-weight: lighter;
+   line-height: 1.8rem;  
+}
+#foot .foot-cover .address ul{
+    list-style-type: none;
+}
+#foot .foot-cover .address .left{
+    text-align: center;
+    padding-top: 0.9rem;
+}
+#foot .foot-cover .timings ul{
+    list-style: none;
+}
+#foot .foot-cover .timings .list{
+    line-height: 2.5rem;
+}
+#foot .foot-cover .timings{
+    color: whitesmoke;
+    width: 14rem;
+    line-height: 1.5rem;
+}
+#foot h1{
+    text-align: center;
+    color:whitesmoke;
+    font-size: 2rem;
+    font-weight: bold;
+    padding-top:1rem;
+    margin-bottom: 2.3rem;
+}
+.feedback,.connect{
+    line-height: 1.5rem;
+    margin:0 auto;
+    /* background-color: yellow;f */
+}
+
+#foot .foot-cover .feedback .sub{
+    margin: 0 auto;
+    color: whitesmoke;
+    width: 6rem;
+    height: 2rem;
+    border-radius: 0.5rem;
+    background-color: coral;
+    border:none;
+    font-size: large;
+    font-weight: bold;
+    cursor: pointer;
+}
+#foot .foot-cover .feedback .sub:hover{
+    background-color: rgb(216, 87, 40);
+}
+#foot .foot-cover .feedback textarea{
+    padding:0.5rem;
+}
+#foot .foot-cover .feedback textarea:focus{
+    border-color: coral;
+}
+#foot .foot-cover .feedback input{
+    margin-bottom: 5px;
+}
+
+#foot .foot-cover .connect h2{
+    color: white;
+    text-align: center;
+    margin-bottom:0.9rem;
+}
+#foot .foot-cover .connect .social{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom:0.9rem;
+}
+#foot .foot-cover .connect .social p{
+    flex: 1;
+    display: inline;
+    padding-left: 0.9rem;
+    cursor: pointer;
+    color:white;
+}
+#foot .copy{
+    color:whitesmoke;
+    text-align: center;
+    padding-bottom:1.3rem;
+    font-weight: lighter;
+}
+
+
+/* Adding animations */
+.intropart1,.qualitypart1,.company-values--part1,.company-values--part2{
+    opacity: 0;
+}
+.intropart1.animated,.qualitypart1.animated
+.company-values--part1.animated,.company-values--part2.animated{
+    opacity:1;
+}
+
+#quality-1{
+    animation-delay:0.5s;
+}
+#quality-2{
+    animation-delay:1.0s;
+}
+#quality-3{
+    animation-delay:1.5s;
+}
+#fade1{
+    animation-delay: 0.5s;
+}
+#fade2{
+    animation-delay: 1.5s;
+}
+#fade3{
+    animation-delay: 1.9s;
+}
+#fade4{
+    animation-delay: 2.3s;
+}
+#fade5{
+    animation-delay: 2.8s;
+}
+
+ 
+
+
+
+
+
+

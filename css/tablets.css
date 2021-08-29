@@ -1,0 +1,200 @@
+/* index */
+.menu-items{
+    display: none;
+}
+.hamburger{
+    display: block;
+}
+.who{
+    grid-template-columns: repeat(4,1fr);
+    width:85vw;
+}
+#ser-7,#ser-8{
+    grid-column: span 2;
+}
+#products .product{
+    grid-template-columns: repeat(2,1fr);
+    row-gap: 80px;
+    column-gap:0;
+}
+#testimonials{
+    grid-template-columns: repeat(4,1fr);
+    row-gap: 80px;
+    width: 90vw;
+}
+#testimonial-1{
+    grid-column: span 2;
+}
+#testimonial-2{
+    grid-column: span 2;
+}
+#testimonial-3{
+    grid-column: 2 /span 2;
+}
+.ratings{
+    width: 90%;
+}
+.ratings .column-1{
+    grid-template-columns: repeat(6,1fr);
+    justify-items: center;
+    row-gap: 80px;
+    width: 90vw;
+    margin: 0 auto;
+}
+.rating-1{
+    grid-column: span 2;
+    grid-column-end: 4;
+
+}
+.rating-2{
+    grid-column: span 2;
+    grid-column-end: -2;
+
+}
+.rating-3{
+    grid-column: span 2;
+}
+.rating-4{
+    grid-column: span 2;
+}
+.rating-5{
+    grid-column: span 2;
+}
+#dealership-with .companies{
+    grid-template-columns: repeat(2,1fr);
+}
+#foot .foot-cover{
+    width: 95vw;
+    margin:0 auto;
+    padding:0;
+}
+#foot .foot-cover .feedback,#foot .foot-cover .address{
+    flex:3;
+}
+#foot .foot-cover .connect{
+    flex: 2;
+}
+#foot .foot-cover .address h2{
+    font-size: 21.5px;
+}
+#foot .foot-cover .address h4,#foot .foot-cover .connect .social p{
+    font-size: 14px;
+    width: 100%;
+}
+#foot .foot-cover .feedback input{
+    width:132px;
+}
+#foot .foot-cover .feedback table{
+    width:auto;
+    margin:0 auto;
+}
+.find-us{
+    display: none;
+}
+#foot .foot-cover .feedback textarea{
+    width:200px;
+}
+span.counter-desc{
+    font-size: 40px;
+    font-weight: bold;
+}
+
+/* About Us  */
+.company-values{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.company-values br{
+    display: none;
+}
+.company-values .heading{
+    flex: 1;
+    padding:0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size:3rem;
+}
+.values {
+    grid-template-columns: repeat(2,1fr);
+    column-gap:90px;
+}
+.value{
+    padding-top:1rem;
+}
+.company-values{
+    height: 60vh;
+}
+.value h3{
+    padding: 10px 0;
+    text-align: center;
+}
+.value p{
+    text-align-last: center;
+}
+.icon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.qualities{
+    width:95vw;
+}
+.intro {
+    width: 85vw;
+    font-size: 1.4rem;
+    line-height: 2.4rem;
+}
+
+/* products  */
+#products .product-part-2{
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+    align-items: center;
+}
+.container-mob {
+    display: block;
+    font-family: 'Quicksand', sans-serif;
+    margin-bottom: 8rem;
+}
+.recommendation,.container-mob h2{
+    display:none;
+}
+
+/* Register */
+.stain{
+    display: none;
+}
+
+/* Product Files  */
+.product-desc .product{
+    align-items: start;
+    width:90%;
+    height: auto;
+    margin: 0 auto;
+    margin-top: 7rem;
+}
+.product-desc .product img{
+    flex: 1;
+    width:370px;
+    /* height: 350px; */
+}
+.product-desc .description{
+    flex: 1;
+}
+.product-desc .description h2{
+    font-size:22px;
+}
+.product-desc .description p{
+    font-size: 14px;
+    width:95%;
+}
+.product-desc .description .quantitative select{
+    margin-right: 0;
+}
+
+/* Cart Items  */
+.cart-items{
+    width:90%;
+}
